@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Captions</h1>
+    </head>
+    <body>
+
+        <div class="text-center">
+            <img src="{{ url_for('static', filename= '../static/Images/'+img) }}" class="rounded float-start" width= "310" height= "320" >
+          </div>
+        <div class="container">
+            <table class="table">
+                <tbody>
+                    {% for caption in captions %}
+                    <tr>
+                        <th scope="row">{{loop.index}}</th>
+                        <td>{{caption}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

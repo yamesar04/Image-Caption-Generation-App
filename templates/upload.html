@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Image Captioning App</title>
+</head>
+<body>
+    <h1>Image Captioning App</h1>
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" id="image">
+
+        <label for="num_captions">Number of Captions:</label>
+        <input type="number" name="num_captions" id="num_captions" min="1" value="1">
+
+        <input type="submit" value="Generate Captions">
+    </form>
+</body>
+</html>

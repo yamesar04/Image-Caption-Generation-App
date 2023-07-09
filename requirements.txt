@@ -1,0 +1,4 @@
+transormers
+torch
+PIL
+Flask
